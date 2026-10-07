@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - PKTS Karate</title>
+    <link rel="icon" href="logos/PKTS LOGO.png" type="image/png">
+    <link rel="stylesheet" href="css/contacts.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="fade-in">
+
+    <div class="top-bar">
+        <header class="main-header">
+            <div class="left-nav-container">
+                <!-- Main Logo -->
+                <div class="logo-container">
+                    <a href="homepage.html">
+                        <img src="logos/PKTS LOGO.png" alt="PKTS Logo" class="header-logo">
+                    </a>
+                </div>
+
+                <!-- Navigation -->
+                <div class="main-nav-container">
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="Homepage.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li class="dropdown has-submenu"><a href="#">BRANCHES</a>
+                                <div class="dropdown-content">
+                                    <a href="contact.html?branch=robinson_metro_east">Robinson Metro East</a>
+                                    <a href="contact.html?branch=vista_mall_antipolo">Vista Mall Antipolo</a>
+                                    <a href="contact.html?branch=marikina_falcon">Marikina Falcon</a>
+                                </div>
+                            </li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                            <li><a href="register.html">APPOINTMENT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="contact-header">
+                <h2>GET IN TOUCH</h2>
+            </div>
+            <div class="contact-boxes">
+                <div class="contact-box">
+                    <div class="icon-circle">
+                        📍
+                    </div>
+                    <h3>VISIT US</h3>
+                    <p>Robinson Metro East, Studio Level Level 2,<br>Barangay Marikina-Infanta Hwy, Pasig,<br>1600 Metro
+                        Manila, Philippines</p>
+                </div>
+                <div class="contact-box">
+                    <div class="icon-circle">
+                        ✉
+                    </div>
+                    <h3>EMAIL US</h3>
+                    <p><a href="mailto:ryo08@gmail.com">ryo08@gmail.com</a></p>
+                </div>
+                <div class="contact-box">
+                    <div class="icon-circle">
+                        📞
+                    </div>
+                    <h3>CALL US</h3>
+                    <p>0927-7869304</p>
+                </div>
+                <div class="contact-box">
+                    <div class="icon-circle">
+                        📱
+                    </div>
+                    <h3>FOLLOW US</h3>
+                    <p><a href="https://facebook.com/JKS-PKTS" target="_blank">facebook.com/JKSPKTS</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="map-header">
+            <div class="map-title">
+                <h3>Find Our Dojo</h3>
+                <p>Visit us at our training facility in Metro Manila</p>
+            </div>
+            <button class="find-location-btn" onclick="openGoogleMaps()">
+                <span>📍</span>
+                Get Directions
+            </button>
+        </div>
+
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.639223086763!2d121.0999832!3d14.619616499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b838d3c7c0af%3A0x640d523d11677ff!2sRobinsons%20Metro%20East!5e0!3m2!1sen!2sph!4v1761311372401!5m2!1sen!2sph"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <div class="location-overlay">
+                <h4>🥋 PKTS Dojo</h4>
+                <div class="location-badge">
+                    Robinson Metro East
+                </div>
+                <div class="location-badge">
+                    Pasig, Metro Manila
+                </div>
+            </div>
+        </div>
+
+        <div class="expanding-text">
+            <strong>Expanding Every Day</strong>
+            <p>More locations coming your way to serve you better.</p>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+
+                <!-- Column 1: Logo + Students & Parents (side by side) -->
+                <div class="footer-column footer-column-with-logo">
+                    <div class="footer-logo-wrapper">
+                        <img src="logos/JKS LOGO.png" alt="PKTS Karate Logo" class="footer-side-logo">
+                    </div>
+                    <div class="footer-column-content">
+                        <h3>Students & Parents</h3>
+                        <ul>
+                            <li><a href="about.html">How to Start Training</a></li>
+                            <li><a href="register.html">Trial Class Registration</a></li>
+                            <li><a href="about.html">Training Programs</a></li>
+                            <li><a href="about.html">Belt Progression</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 2: Dojo Branches -->
+                <div class="footer-column">
+                    <h3>Dojo Branches</h3>
+                    <ul>
+                        <li><a href="contact.html?branch=robinson_metro_east">Robinson Metro East</a></li>
+                        <li><a href="contact.html?branch=vista_mall_antipolo">Vista Mall Antipolo</a></li>
+                        <li><a href="contact.html?branch=marikina_falcon">Marikina Falcon</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: About PKTS -->
+                <div class="footer-column">
+                    <h3>About PKTS</h3>
+                    <ul>
+                        <li><a href="about.html">Our Philosophy</a></li>
+                        <li><a href="about.html">Instructors</a></li>
+                        <li><a href="contact.html">Dojo Location</a></li>
+                        <li><a href="about.html">Achievements</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Get in Touch -->
+                <div class="footer-column">
+                    <h3>Get in Touch</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:ryo08@gmail.com">ryo08@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <a href="tel:09277869304">0927-786-9304</a><br>
+                                <span class="sub-info">0917-183-4520</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Robinson Metro East, Studio Level 2<br>
+                                Pasig, Metro Manila 1600<br>
+                                Philippines</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-facebook"></i>
+                            <a href="https://facebook.com/JKSPKTS" target="_blank">facebook.com/JKSPKTS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">© 2025 PKTS Karate Dojo. All rights reserved.<br>
+                        Powering the future of martial arts training.</p>
+                    <div class="footer-links">
+                        <a href="#">Terms of Use</a>
+                        <span class="separator">|</span>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>

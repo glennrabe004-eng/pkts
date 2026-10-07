@@ -1,0 +1,11 @@
+[22-Aug-2026 13:14:21 Asia/Manila] PHP Fatal error:  Uncaught Error: mysqli_stmt::bind_param(): Argument #2 cannot be passed by reference in C:\laragon\www\pkts-main\setup_db.php:102
+Stack trace:
+#0 {main}
+  thrown in C:\laragon\www\pkts-main\setup_db.php on line 102
+[07-Oct-2026 16:17:21 Asia/Manila] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo for sql210.infinityfree.com failed: No such host is known.  in C:\laragon\www\pkts-main\config.php on line 17
+[07-Oct-2026 16:17:21 Asia/Manila] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for sql210.infinityfree.com failed: No such host is known.  in C:\laragon\www\pkts-main\config.php:17
+Stack trace:
+#0 C:\laragon\www\pkts-main\config.php(17): mysqli->__construct('sql210.infinity...', 'if0_42734174', Object(SensitiveParameterValue), 'if0_42734174_pk...')
+#1 Command line code(1): require('C:\\laragon\\www\\...')
+#2 {main}
+  thrown in C:\laragon\www\pkts-main\config.php on line 17
