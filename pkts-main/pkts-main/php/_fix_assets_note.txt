@@ -1,0 +1,5 @@
+Asset paths note:
+- In this project, many PHP pages use relative paths like href="css/..." or src="logos/...".
+- When pages are accessed as /php/<page>.php, relative paths resolve to /php/css/... (404).
+- Fix by changing to absolute paths starting with /, e.g. /css/... /logos/... /background/... /js/...
+

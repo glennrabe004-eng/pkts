@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Trial Class - PKTS Karate</title>
+    <link rel="icon" href="logos/PKTS LOGO.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/register.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="fade-in">
+
+    <!-- HEADER (matches main page) -->
+    <div class="top-bar">
+        <header class="main-header">
+            <div class="left-nav-container">
+                <!-- Main Logo -->
+                <div class="logo-container">
+                    <a href="homepage.html">
+                        <img src="logos/PKTS LOGO.png" alt="PKTS Logo" class="header-logo">
+                    </a>
+                </div>
+
+                <!-- Navigation -->
+                <div class="main-nav-container">
+                    <nav class="main-nav">
+                        <ul>
+                            <li><a href="Homepage.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li class="dropdown has-submenu"><a href="#">BRANCHES</a>
+                                <div class="dropdown-content">
+                                    <a href="contact.html?branch=robinson_metro_east">Robinson Metro East</a>
+                                    <a href="contact.html?branch=vista_mall_antipolo">Vista Mall Antipolo</a>
+                                    <a href="contact.html?branch=marikina_falcon">Marikina Falcon</a>
+                                </div>
+                            </li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                            <li><a href="register.html">APPOINTMENT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- JKS Logo -->
+            <div class="logo-container">
+                <a href="homepage.html">
+                    <img src="logos/JKS LOGO.png" alt="JKS Logo" class="header-logo">
+                </a>
+            </div>
+        </header>
+    </div>
+
+    <!-- TRIAL CLASS BOOKING FORM -->
+    <div class="trial-container">
+        <div class="trial-header">
+            <h1>BOOK YOUR KARATE TRIAL CLASS NOW</h1>
+            <p>Join the PKTS Karate family — Your first class is on us!</p>
+        </div>
+
+        <div class="trial-form">
+            <form action="https://formspree.io/f/your-form-id" method="POST"> <!-- Change to your form handler -->
+
+                <!-- Guardian & Student Details -->
+                <h2 class="section-title">Guardian & Student Details</h2>
+                <div class="form-grid">
+                    <div>
+                        <label>Guardian First Name <span style="color:red">*</span></label>
+                        <input type="text" name="guardian_first" required
+                            oninput="this.value=this.value.replace(/[0-9]/g,'')">
+                    </div>
+                    <div>
+                        <label>Guardian Last Name <span style="color:red">*</span></label>
+                        <input type="text" name="guardian_last" required
+                            oninput="this.value=this.value.replace(/[0-9]/g,'')">
+                    </div>
+                </div>
+                <div class="form-grid">
+                    <div>
+                        <label>Student First Name <span style="color:red">*</span></label>
+                        <input type="text" name="student_first" required
+                            oninput="this.value=this.value.replace(/[0-9]/g,'')">
+                    </div>
+                    <div>
+                        <label>Student Last Name <span style="color:red">*</span></label>
+                        <input type="text" name="student_last" required
+                            oninput="this.value=this.value.replace(/[0-9]/g,'')">
+                    </div>
+                    <div>
+                        <label>Age of Student <span style="color:red">*</span></label>
+                        <input type="number" name="student_age" min="4" max="18" required placeholder="e.g. 10">
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <h2 class="section-title">Contact Information</h2>
+                <div class="form-grid">
+                    <div>
+                        <label>Email Address <span style="color:red">*</span></label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div>
+                        <label>Phone Number <span style="color:red">*</span></label>
+                        <input type="text" name="phone" required maxlength="11"
+                            oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <h2 class="section-title">Current Address</h2>
+                <div class="form-grid">
+                    <div>
+                        <label>Street Address <span style="color:red">*</span></label>
+                        <input type="text" name="street" required>
+                    </div>
+                </div>
+                <div class="form-grid">
+                    <div>
+                        <label>City <span style="color:red">*</span></label>
+                        <input type="text" name="city" required>
+                    </div>
+                    <div>
+                        <label>State / Province <span style="color:red">*</span></label>
+                        <select name="province" required>
+                            <option value="" disabled selected>Select Province</option>
+                            <option>Ilocos Norte</option>
+                            <option>Ilocos Sur</option>
+                            <option>La Union</option>
+                            <option>Pangasinan</option>
+                            <option>Benguet</option>
+                            <option>Bulacan</option>
+                            <option>Pampanga</option>
+                            <option>Batangas</option>
+                            <option>Cavite</option>
+                            <option>Laguna</option>
+                            <option>Quezon</option>
+                            <option>Rizal</option>
+                            <option>National Capital Region (NCR)</option>
+                            <option>Cebu</option>
+                            <option>Davao del Sur</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Postal / Zip Code <span style="color:red">*</span></label>
+                        <input type="text" name="zip" required maxlength="4"
+                            oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+                    </div>
+                </div>
+
+                <!-- Trial Class Schedule -->
+                <h2 class="section-title">Preferred Trial Class Schedule</h2>
+                <p class="note">Trial classes are available only on <strong>Saturdays and Sundays</strong>.</p>
+                <div class="form-grid">
+                    <div>
+                        <label>Date <span style="color:red">*</span></label>
+                        <input type="date" name="trial_date" id="trialDate" required>
+                    </div>
+                    <div>
+                        <label>Preferred Time Slot <span style="color:red">*</span></label>
+                        <select name="time_slot" required>
+                            <option value="" disabled selected>Choose time</option>
+                            <option>Saturday 10:00 AM</option>
+                            <option>Saturday 11:30 AM</option>
+                            <option>Saturday 02:00 PM</option>
+                            <option>Sunday 10:00 AM</option>
+                            <option>Sunday 11:30 AM</option>
+                            <option>Sunday 02:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">BOOK YOUR TRIAL CLASS NOW!</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer (matches main page) -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+
+                <!-- Column 1: Logo + Students & Parents (side by side) -->
+                <div class="footer-column footer-column-with-logo">
+                    <div class="footer-logo-wrapper">
+                        <img src="logos/JKS LOGO.png" alt="PKTS Karate Logo" class="footer-side-logo">
+                    </div>
+                    <div class="footer-column-content">
+                        <h3>Students & Parents</h3>
+                        <ul>
+                            <li><a href="about.html">How to Start Training</a></li>
+                            <li><a href="register.html">Trial Class Registration</a></li>
+                            <li><a href="about.html">Training Programs</a></li>
+                            <li><a href="about.html">Belt Progression</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column 2: Dojo Branches -->
+                <div class="footer-column">
+                    <h3>Dojo Branches</h3>
+                    <ul>
+                        <li><a href="contact.html?branch=robinson_metro_east">Robinson Metro East</a></li>
+                        <li><a href="contact.html?branch=vista_mall_antipolo">Vista Mall Antipolo</a></li>
+                        <li><a href="contact.html?branch=marikina_falcon">Marikina Falcon</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: About PKTS -->
+                <div class="footer-column">
+                    <h3>About PKTS</h3>
+                    <ul>
+                        <li><a href="about.html">Our Philosophy</a></li>
+                        <li><a href="about.html">Instructors</a></li>
+                        <li><a href="contact.html">Dojo Location</a></li>
+                        <li><a href="about.html">Achievements</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Get in Touch -->
+                <div class="footer-column">
+                    <h3>Get in Touch</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:ryo08@gmail.com">ryo08@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <a href="tel:09277869304">0927-786-9304</a><br>
+                                <span class="sub-info">0917-183-4520</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Robinson Metro East, Studio Level 2<br>
+                                Pasig, Metro Manila 1600<br>
+                                Philippines</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-facebook"></i>
+                            <a href="https://facebook.com/JKSPKTS" target="_blank">facebook.com/JKSPKTS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">© 2025 PKTS Karate Dojo. All rights reserved.<br>
+                        Powering the future of martial arts training.</p>
+                    <div class="footer-links">
+                        <a href="#">Terms of Use</a>
+                        <span class="separator">|</span>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div id="cart-toast" class="toast">Thank You For Booking Your Trial Class With Us!</div>
+
+    <script src="js/appoint.js"></script>
+    <script>
+        // Fade the page in (the CSS hides body.fade-in until .active is added)
+        window.addEventListener('load', function () {
+            document.body.classList.add('active');
+        });
+
+        // Restrict date picker to weekends only
+        const dateInput = document.getElementById('trialDate');
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.min = today;
+
+        dateInput.addEventListener('change', function () {
+            const day = new Date(this.value).getDay();
+            if (day !== 0 && day !== 6) {
+                alert('Trial classes are only on Saturdays and Sundays. Please choose a weekend date.');
+                this.value = '';
+            }
+        });
+
+        // Header shrink + scroll-to-top button
+        const header = document.querySelector('.main-header');
+        const scrollBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', function () {
+            header.classList.toggle('scrolled', window.scrollY > 50);
+            scrollBtn.classList.toggle('show', window.scrollY > 300);
+        });
+
+        scrollBtn.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>
